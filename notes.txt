@@ -1,0 +1,9 @@
+game_stats = {
+  "player_wins":0,
+  "ai_wins":0,
+  "draws":0
+}
+
+@app.route("/")
+def index():
+   return render_template("index.html", stats=game_stats). When the index page is rendered, stats will help the html to have access to the python environment hereby changing the values of the player_wins,ai_wins,draws.
