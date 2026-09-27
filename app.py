@@ -16,7 +16,7 @@ def index():
 
 
 #API for javascript
-@pp.route("/api/record_win", methods=["POST"])
+@app.route("/api/record_win", methods=["POST"])
 def record_win():
   data = request.get_json()#get the data via query request in json format
   winner = data.get("winner")
