@@ -23,3 +23,5 @@ val === "" ? idx : null: Uses the ternary operator. If the cell is empty (""), i
 .filter((val) => val !== null): Removes all null values, leaving only the indices of empty cells.
 
 If you create an api with its function for javascript, you do not create a html page for that function, since the function is for javascript.
+
+grid-template-columns: repeat(3, 100px);/*produce three columns each 100px*/

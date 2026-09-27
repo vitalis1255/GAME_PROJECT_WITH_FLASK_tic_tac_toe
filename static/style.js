@@ -101,7 +101,7 @@ function aiMove() {
 
 
 function sendScoreToFlask(winner) {
-  //use fetch to get the api o record win in the python
+  //use fetch to get the api of record win in the python
   fetch('/api/record_win', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
