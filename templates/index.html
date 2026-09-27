@@ -10,7 +10,33 @@
     <h1>Flask Tic-Tac-Toe</h1>
     
     <div class="scoreboard">
-      
+      <h3>Scoreboard</h3>
+
+      <p>
+        player (X): <span id="p-wins">{{stats.player_wins}}</span>
+        AI: (O): <span id="ai-wins">{{stats.ai_wins}}</span>
+        Draws: <span id="draws">{{stats.draws}}</span>
+      </p>
     </div>
+
+    <!--Status: For both X and AI. player X's turn by default-->
+    <div id="status">player X's Turn</div>
+
+    <div class="board" id="game-board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <button id="reset">Reset Board</button>
+
+    <!-- Link JS -->
+     <script src="{{url_for('static', filename='style.js')}}"></script>
   </body>
 </html>

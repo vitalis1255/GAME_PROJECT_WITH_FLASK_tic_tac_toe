@@ -7,3 +7,19 @@ game_stats = {
 @app.route("/")
 def index():
    return render_template("index.html", stats=game_stats). When the index page is rendered, stats will help the html to have access to the python environment hereby changing the values of the player_wins,ai_wins,draws.
+  
+data-index is a custom HTML data attribute used to store an index (position number) on an HTML element. It allows JavaScript to identify the element's position in a list or collection.
+
+jsonify() is a Flask function used to convert Python data, such as dictionaries and lists, into a JSON response that can be sent to a web browser or an API client.
+
+get_json() is a Flask method used to retrieve and parse JSON data sent to a Flask application in an HTTP request, usually through a POST or PUT request.
+
+et emptyCells = board.map((val,idx)=> (val === "" ? idx : null)).filter((val) => val !== null); This line of code identifies all the empty cells in the board array and stores their indices in emptyCells.
+Explanation:
+board.map((val, idx) => ...): Loops through each element in the board array. val is the cell's value, while idx is its index.
+
+val === "" ? idx : null: Uses the ternary operator. If the cell is empty (""), it returns its index (idx); otherwise, it returns null.
+
+.filter((val) => val !== null): Removes all null values, leaving only the indices of empty cells.
+
+If you create an api with its function for javascript, you do not create a html page for that function, since the function is for javascript.
